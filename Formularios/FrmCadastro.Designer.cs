@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 431);
+            this.ClientSize = new System.Drawing.Size(396, 431);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtSenhaCF);
