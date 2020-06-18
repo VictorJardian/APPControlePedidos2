@@ -24,7 +24,7 @@ namespace APPControlePedidos2.Formularios
         {
             try
             {
-                String conexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\win10\Desktop\BandoDadosAcessPROJETO02.mdb";
+                String conexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\win10\source\repos\APPControlePedidos2\Resources\BandoDadosAcessPROJETO02.mdb";
                 OleDbConnection con = new OleDbConnection(conexao);
                 con.Open();
 
@@ -58,7 +58,7 @@ namespace APPControlePedidos2.Formularios
         {
             try
             {
-                String conexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\win10\Desktop\BandoDadosAcessPROJETO02.mdb";
+                String conexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\win10\source\repos\APPControlePedidos2\Resources\BandoDadosAcessPROJETO02.mdb";
                 OleDbConnection con = new OleDbConnection(conexao);
                 con.Open();
 

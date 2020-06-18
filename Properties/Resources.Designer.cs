@@ -61,23 +61,12 @@ namespace APPControlePedidos2.Properties {
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        internal static System.Drawing.Bitmap computer_icons_user_login_gender_thumb {
+        internal static byte[] BandoDadosAcessPROJETO02 {
             get {
-                object obj = ResourceManager.GetObject("computer-icons-user-login-gender-thumb", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap kisspng_computer_icons_login_person_user_avatar_log_5b14db41a61fb6_0478299015280935056805 {
-            get {
-                object obj = ResourceManager.GetObject("kisspng-computer-icons-login-person-user-avatar-log-5b14db41a61fb6.04782990152809" +
-                        "35056805", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("BandoDadosAcessPROJETO02", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

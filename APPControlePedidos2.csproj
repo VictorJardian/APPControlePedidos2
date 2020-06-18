@@ -61,7 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexao.cs" />
     <Compile Include="Formularios\FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +154,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kisspng-computer-icons-physician-login-medicine-user-avatar-5ac45a4d44fe99.2456489015228176132826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BandoDadosAcessPROJETO02.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Threading;
 
 namespace APPControlePedidos2
 {
@@ -15,6 +16,7 @@ namespace APPControlePedidos2
     {
         static string usuario;
         static string senha;
+        Thread nt;
 
         public FrmLogin()
         {
@@ -43,7 +45,7 @@ namespace APPControlePedidos2
 
                 OleDbCommand cmd = new OleDbCommand(SQL, con);
 
-                cmd.Parameters.AddWithValue("@Usuario",txtUsuario.Text);
+                cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
                 cmd.Parameters.AddWithValue("@Senha", txtSenha.Text);
 
                 OleDbDataReader dr = cmd.ExecuteReader();
@@ -52,11 +54,14 @@ namespace APPControlePedidos2
                 {
                     autenticacao(dr["Usuario"].ToString(), dr["Senha"].ToString());
                     con.Close();
-                    MessageBox.Show("Logado com sucesso!");
-                    FrmTelaPrincipal frm = new FrmTelaPrincipal();
-                    frm.Show();
-
                     
+                    MessageBox.Show("Logado com sucesso!");
+                    this.Close();
+
+                    nt = new Thread (novoform);
+                    nt.SetApartmentState(ApartmentState.STA);
+                    nt.Start();
+
                 }
                 else
                 {
@@ -70,18 +75,22 @@ namespace APPControlePedidos2
                 MessageBox.Show(erro.Message);
 
             }
-
-        }  
-
-        public static void autenticacao(string usuario1, string senha1)
-        {
-            usuario = usuario1;
-            senha = senha1;   
         }
-        public static String GetUsuario()
+
+        private void novoform()
+        {
+            Application.Run(new FrmTelaPrincipal());
+        }
+
+        private static string GetUsuario()
         {
             return "Usuario: " + usuario + "\nSenha: " + senha;
         }
 
+        private static void autenticacao(string usuario1, string senha1)
+        {
+            usuario = usuario1;
+            senha = senha1;
+        }
     }
 }
