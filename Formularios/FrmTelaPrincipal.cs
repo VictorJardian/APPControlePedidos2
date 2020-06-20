@@ -19,12 +19,6 @@ namespace APPControlePedidos2
             InitializeComponent();
         }
 
-        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmCadastroPedidos frm = new FrmCadastroPedidos();
-            frm.Show();
-        }
-
         private void listaDePedidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmListaPedidos frm = new FrmListaPedidos();
@@ -34,6 +28,24 @@ namespace APPControlePedidos2
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void relatoriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRelatorios frm = new FrmRelatorios();
+            frm.Show();
+        }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadastroPedidos frm = new FrmCadastroPedidos();
+            frm.Show();
+        }
+
+        private void materiaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadastroProdutos frm = new FrmCadastroProdutos();
+            frm.Show();
         }
     }
 }

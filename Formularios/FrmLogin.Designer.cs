@@ -45,7 +45,7 @@
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(137, 30);
-            this.btnLogin.TabIndex = 0;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -56,7 +56,7 @@
             this.btnCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(137, 30);
-            this.btnCadastro.TabIndex = 1;
+            this.btnCadastro.TabIndex = 5;
             this.btnCadastro.Text = "Cadastre-se";
             this.btnCadastro.UseVisualStyleBackColor = true;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
@@ -66,7 +66,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(338, 45);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(198, 26);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 1;
             // 
             // label1
             // 
@@ -92,7 +92,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(198, 26);
-            this.txtSenha.TabIndex = 4;
+            this.txtSenha.TabIndex = 2;
             // 
             // btnSair
             // 
@@ -100,7 +100,7 @@
             this.btnSair.Margin = new System.Windows.Forms.Padding(4);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(137, 30);
-            this.btnSair.TabIndex = 7;
+            this.btnSair.TabIndex = 4;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);

@@ -30,11 +30,10 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materiaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDePedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialTotalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialGastoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialFaltanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,10 +53,26 @@
             // 
             // cadastroToolStripMenuItem
             // 
+            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pedidosToolStripMenuItem,
+            this.materiaisToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
-            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+            // 
+            // pedidosToolStripMenuItem
+            // 
+            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pedidosToolStripMenuItem.Text = "Pedidos";
+            this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
+            // 
+            // materiaisToolStripMenuItem
+            // 
+            this.materiaisToolStripMenuItem.Name = "materiaisToolStripMenuItem";
+            this.materiaisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiaisToolStripMenuItem.Text = "Materiais";
+            this.materiaisToolStripMenuItem.Click += new System.EventHandler(this.materiaisToolStripMenuItem_Click);
             // 
             // listaDePedidosToolStripMenuItem
             // 
@@ -68,31 +83,10 @@
             // 
             // relatoriosToolStripMenuItem
             // 
-            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.materialTotalToolStripMenuItem,
-            this.materialGastoToolStripMenuItem,
-            this.materialFaltanteToolStripMenuItem});
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatoriosToolStripMenuItem.Text = "Relatorios";
-            // 
-            // materialTotalToolStripMenuItem
-            // 
-            this.materialTotalToolStripMenuItem.Name = "materialTotalToolStripMenuItem";
-            this.materialTotalToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.materialTotalToolStripMenuItem.Text = "Material Total";
-            // 
-            // materialGastoToolStripMenuItem
-            // 
-            this.materialGastoToolStripMenuItem.Name = "materialGastoToolStripMenuItem";
-            this.materialGastoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.materialGastoToolStripMenuItem.Text = "Material Gasto";
-            // 
-            // materialFaltanteToolStripMenuItem
-            // 
-            this.materialFaltanteToolStripMenuItem.Name = "materialFaltanteToolStripMenuItem";
-            this.materialFaltanteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.materialFaltanteToolStripMenuItem.Text = "Material Faltante";
+            this.relatoriosToolStripMenuItem.Click += new System.EventHandler(this.relatoriosToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -128,9 +122,8 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDePedidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem materialTotalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem materialGastoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem materialFaltanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem materiaisToolStripMenuItem;
     }
 }

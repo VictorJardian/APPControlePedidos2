@@ -19,6 +19,7 @@ namespace APPControlePedidos2.Formularios
         }
 
         public string Codigo;
+        string Conssecionaria;
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
@@ -32,6 +33,9 @@ namespace APPControlePedidos2.Formularios
 
                 SQL = "Insert Into ListaPedidos(Cliente,Medidores,Concessionaria) Values ";
                 SQL += "('" + txtCliente.Text + "','" + txtMedidores.Text + "', '" + cbConcessionaria.Text + "')";
+                
+                SQL += "Insert Into Produtos(QuantTotal) Values ";
+                SQL += "('" + txtMedidores.Text + "')";
 
                 OleDbCommand cmd = new OleDbCommand(SQL, con);
 

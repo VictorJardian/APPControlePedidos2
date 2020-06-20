@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
-namespace APPControlePedidos2.Formularios
+namespace APPControlePedidos2
 {
-    public partial class FrmListaPedidos : Form
+    public partial class FrmRelatorios : Form
     {
-        public FrmListaPedidos()
+        public FrmRelatorios()
         {
             InitializeComponent();
         }
 
-        private void btnConsulta_Click(object sender, EventArgs e)
+        private void btnConsultar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -26,35 +26,21 @@ namespace APPControlePedidos2.Formularios
                 OleDbConnection con = new OleDbConnection(conexao);
                 con.Open();
 
-                String SQL = "select * from ListaPedidos";
+                String SQL = "select * from Produtos";
 
                 OleDbDataAdapter adapter = new OleDbDataAdapter(SQL, con);
 
                 DataSet ds = new DataSet();
 
-                adapter.Fill(ds, "ListaPedidos");
+                adapter.Fill(ds, "Produtos");
 
-                dgResultado.DataSource = ds.Tables["ListaPedidos"];
+                dgRelatorios.DataSource = ds.Tables["Produtos"];
 
             }
             catch (Exception erro)
             {
                 MessageBox.Show(erro.Message);
             }
-            
-        }
-
-        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmCadastroPedidos frm = new FrmCadastroPedidos();
-            frm.Codigo = dgResultado.SelectedCells[0].Value.ToString();
-            frm.txtCliente.Text = dgResultado.SelectedCells[1].Value.ToString();
-            frm.txtMedidores.Text = dgResultado.SelectedCells[2].Value.ToString();
-            frm.cbConcessionaria.Text = dgResultado.SelectedCells[3].Value.ToString();
-            frm.btnCadastrar.Visible = false;
-            frm.btnAlterar.Visible = true;
-
-            frm.ShowDialog();
         }
 
         private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,15 +50,15 @@ namespace APPControlePedidos2.Formularios
                 String conexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\win10\source\repos\APPControlePedidos2\Resources\BandoDadosAcessPROJETO02.mdb";
                 OleDbConnection con = new OleDbConnection(conexao);
                 con.Open();
-                string cod = dgResultado.SelectedCells[0].Value.ToString();
-                String SQL = "delete from ListaPedidos where Codigo =" + cod;
+                string cod = dgRelatorios.SelectedCells[0].Value.ToString();
+                String SQL = "delete from Produtos where Codigo =" + cod;
 
                 OleDbCommand cmd = new OleDbCommand(SQL, con);
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Dados apagados com sucesso!");
-                btnConsulta_Click(sender, e);
+                MessageBox.Show("Produto apagado com sucesso!");
+                btnConsultar_Click_1(sender, e);
 
             }
             catch (Exception erro)

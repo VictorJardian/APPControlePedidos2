@@ -42,12 +42,9 @@ namespace APPControlePedidos2
 
                 con.Close();
 
-                
-
             }
             catch (Exception erro)
             {
-
                 MessageBox.Show(erro.Message);
             }
 

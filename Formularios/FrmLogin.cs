@@ -73,7 +73,6 @@ namespace APPControlePedidos2
             catch (Exception erro)
             {
                 MessageBox.Show(erro.Message);
-
             }
         }
 

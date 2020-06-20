@@ -73,6 +73,12 @@
     <Compile Include="Formularios\FrmCadastroPedidos.Designer.cs">
       <DependentUpon>FrmCadastroPedidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmCadastroProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCadastroProdutos.Designer.cs">
+      <DependentUpon>FrmCadastroProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmListaPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,11 +99,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Formularios\FrmRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRelatorios.Designer.cs">
+      <DependentUpon>FrmRelatorios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Formularios\FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmCadastroPedidos.resx">
       <DependentUpon>FrmCadastroPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCadastroProdutos.resx">
+      <DependentUpon>FrmCadastroProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmListaPedidos.resx">
       <DependentUpon>FrmListaPedidos.cs</DependentUpon>
@@ -118,6 +133,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Formularios\FrmRelatorios.resx">
+      <DependentUpon>FrmRelatorios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
