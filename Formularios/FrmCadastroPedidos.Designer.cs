@@ -70,7 +70,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(20, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(623, 337);
+            this.groupBox1.Size = new System.Drawing.Size(623, 274);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
@@ -112,7 +112,7 @@
             "Escelsa",
             "Light",
             "Energisa"});
-            this.cbConcessionaria.Location = new System.Drawing.Point(186, 164);
+            this.cbConcessionaria.Location = new System.Drawing.Point(186, 99);
             this.cbConcessionaria.Name = "cbConcessionaria";
             this.cbConcessionaria.Size = new System.Drawing.Size(184, 26);
             this.cbConcessionaria.TabIndex = 5;
@@ -120,7 +120,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(75, 167);
+            this.label3.Location = new System.Drawing.Point(75, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 18);
             this.label3.TabIndex = 4;
@@ -128,7 +128,7 @@
             // 
             // txtMedidores
             // 
-            this.txtMedidores.Location = new System.Drawing.Point(186, 107);
+            this.txtMedidores.Location = new System.Drawing.Point(186, 148);
             this.txtMedidores.Name = "txtMedidores";
             this.txtMedidores.Size = new System.Drawing.Size(184, 26);
             this.txtMedidores.TabIndex = 3;
@@ -136,7 +136,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 110);
+            this.label2.Location = new System.Drawing.Point(28, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 18);
             this.label2.TabIndex = 2;
@@ -146,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 378);
+            this.ClientSize = new System.Drawing.Size(667, 298);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

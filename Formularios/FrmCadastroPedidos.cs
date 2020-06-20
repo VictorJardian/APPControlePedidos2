@@ -31,12 +31,9 @@ namespace APPControlePedidos2.Formularios
 
                 String SQL;
 
-                SQL = "Insert Into ListaPedidos(Cliente,Medidores,Concessionaria) Values ";
-                SQL += "('" + txtCliente.Text + "','" + txtMedidores.Text + "', '" + cbConcessionaria.Text + "')";
+                SQL = "Insert Into ListaPedidos(Cliente,Medidores,Concessionaria,Tampas,Sobretampa,CaixaMedidor,PlacaSupDisjuntor) Values ";
+                SQL += "('" + txtCliente.Text + "','" + txtMedidores.Text + "', '" + cbConcessionaria.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "')";
                 
-                SQL += "Insert Into Produtos(QuantTotal) Values ";
-                SQL += "('" + txtMedidores.Text + "')";
-
                 OleDbCommand cmd = new OleDbCommand(SQL, con);
 
                 cmd.ExecuteNonQuery();
