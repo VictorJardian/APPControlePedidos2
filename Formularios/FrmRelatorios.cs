@@ -26,39 +26,15 @@ namespace APPControlePedidos2
                 OleDbConnection con = new OleDbConnection(conexao);
                 con.Open();
 
-                String SQL = "select * from Produtos";
+                String SQL = "select * from Material";
 
                 OleDbDataAdapter adapter = new OleDbDataAdapter(SQL, con);
 
                 DataSet ds = new DataSet();
 
-                adapter.Fill(ds, "Produtos");
+                adapter.Fill(ds, "Material");
 
-                dgRelatorios.DataSource = ds.Tables["Produtos"];
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
-        }
-
-        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                String conexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\win10\source\repos\APPControlePedidos2\Resources\BandoDadosAcessPROJETO02.mdb";
-                OleDbConnection con = new OleDbConnection(conexao);
-                con.Open();
-                string cod = dgRelatorios.SelectedCells[0].Value.ToString();
-                String SQL = "delete from Produtos where Codigo =" + cod;
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-
-                cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Produto apagado com sucesso!");
-                btnConsultar_Click_1(sender, e);
+                dgRelatorios.DataSource = ds.Tables["Material"];
 
             }
             catch (Exception erro)

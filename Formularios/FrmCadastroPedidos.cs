@@ -19,7 +19,7 @@ namespace APPControlePedidos2.Formularios
         }
 
         public string Codigo;
-        string Conssecionaria;
+        string Concessionaria;
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
@@ -31,26 +31,53 @@ namespace APPControlePedidos2.Formularios
 
                 String SQL;
 
-                SQL = "Insert Into ListaPedidos(Cliente,Medidores,Concessionaria,Tampas,Sobretampa,CaixaMedidor,PlacaSupDisjuntor) Values ";
-                SQL += "('" + txtCliente.Text + "','" + txtMedidores.Text + "', '" + cbConcessionaria.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "')";
-                
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
+                Concessionaria = cbConcessionaria.Text;
 
-                cmd.ExecuteNonQuery();
+                if (Concessionaria == "Escelsa") 
+                {
+                    SQL = "Insert Into ListaPedidos(Cliente,Medidores,Concessionaria,TampaEDP,SobretampaEDP,CaixaMedidorEDP,PlacaSupDisjuntorEdpLight) Values ";
+                    SQL += "('" + txtCliente.Text + "','" + txtMedidores.Text + "', '" + cbConcessionaria.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "')";
 
+                    OleDbCommand cmd = new OleDbCommand(SQL, con);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                else
+                {
+                    if(Concessionaria == "Light")
+                    {
+                        SQL = "Insert Into ListaPedidos(Cliente,Medidores,Concessionaria,TampaLight,SobretampaLight,CaixaMedidorLight,PlacaSupDisjuntorEdpLight) Values ";
+                        SQL += "('" + txtCliente.Text + "','" + txtMedidores.Text + "', '" + cbConcessionaria.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "')";
+
+                        OleDbCommand cmd = new OleDbCommand(SQL, con);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                    else
+                    {
+                        if (Concessionaria == "Energisa")
+                        {
+                            SQL = "Insert Into ListaPedidos(Cliente,Medidores,Concessionaria,TampaEnergisa,SobretampaEnergisa,CaixaMedidorEnergisa,PlacaSupDisjuntorEnergisa) Values ";
+                            SQL += "('" + txtCliente.Text + "','" + txtMedidores.Text + "', '" + cbConcessionaria.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "','" + txtMedidores.Text + "')";
+
+                            OleDbCommand cmd = new OleDbCommand(SQL, con);
+
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                }
+      
                 MessageBox.Show("Dados cadastrados com sucesso!");
-
                 txtCliente.Clear();
                 txtMedidores.Clear();
                 cbConcessionaria.SelectedIndex = -1;
 
                 con.Close();
                 this.Close();
-
             }
             catch (Exception erro)
             {
-
                 MessageBox.Show(erro.Message);
             }
         }

@@ -107,6 +107,7 @@
             // 
             // cbConcessionaria
             // 
+            this.cbConcessionaria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbConcessionaria.FormattingEnabled = true;
             this.cbConcessionaria.Items.AddRange(new object[] {
             "Escelsa",
