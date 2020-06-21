@@ -68,7 +68,7 @@ namespace APPControlePedidos2.Formularios
                     }
                 }
       
-                MessageBox.Show("Dados cadastrados com sucesso!");
+                MessageBox.Show("Dados cadastrados com sucesso!","Aviso");
                 txtCliente.Clear();
                 txtMedidores.Clear();
                 cbConcessionaria.SelectedIndex = -1;
@@ -101,7 +101,7 @@ namespace APPControlePedidos2.Formularios
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Dados alterados com sucesso!");
+                MessageBox.Show("Dados alterados com sucesso!", "Aviso");
 
                 txtCliente.Clear();
                 txtMedidores.Clear();

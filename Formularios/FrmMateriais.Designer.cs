@@ -1,6 +1,6 @@
 ﻿namespace APPControlePedidos2
 {
-    partial class FrmRelatorios
+    partial class FrmMaterais
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnConsultar = new System.Windows.Forms.Button();
-            this.dgRelatorios = new System.Windows.Forms.DataGridView();
+            this.dgMateriais = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgRelatorios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMateriais)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnConsultar);
-            this.groupBox1.Controls.Add(this.dgRelatorios);
+            this.groupBox1.Controls.Add(this.dgMateriais);
             this.groupBox1.Location = new System.Drawing.Point(10, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(752, 557);
@@ -55,19 +59,34 @@
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click_1);
             // 
-            // dgRelatorios
+            // dgMateriais
             // 
-            this.dgRelatorios.AllowUserToAddRows = false;
-            this.dgRelatorios.AllowUserToDeleteRows = false;
-            this.dgRelatorios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgRelatorios.Location = new System.Drawing.Point(11, 25);
-            this.dgRelatorios.Name = "dgRelatorios";
-            this.dgRelatorios.ReadOnly = true;
-            this.dgRelatorios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgRelatorios.Size = new System.Drawing.Size(729, 446);
-            this.dgRelatorios.TabIndex = 0;
+            this.dgMateriais.AllowUserToAddRows = false;
+            this.dgMateriais.AllowUserToDeleteRows = false;
+            this.dgMateriais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgMateriais.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgMateriais.Location = new System.Drawing.Point(11, 25);
+            this.dgMateriais.Name = "dgMateriais";
+            this.dgMateriais.ReadOnly = true;
+            this.dgMateriais.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgMateriais.Size = new System.Drawing.Size(729, 446);
+            this.dgMateriais.TabIndex = 0;
             // 
-            // FrmRelatorios
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.excluirToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(110, 26);
+            // 
+            // excluirToolStripMenuItem
+            // 
+            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
+            // 
+            // FrmMaterais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,12 +95,13 @@
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmRelatorios";
+            this.Name = "FrmMaterais";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Relatorios";
+            this.Text = "Materiais";
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgRelatorios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMateriais)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -90,6 +110,8 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnConsultar;
-        private System.Windows.Forms.DataGridView dgRelatorios;
+        private System.Windows.Forms.DataGridView dgMateriais;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
     }
 }

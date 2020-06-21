@@ -33,6 +33,8 @@
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materiaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDePedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pedidosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.materiaisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -63,30 +65,45 @@
             // pedidosToolStripMenuItem
             // 
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
             // 
             // materiaisToolStripMenuItem
             // 
             this.materiaisToolStripMenuItem.Name = "materiaisToolStripMenuItem";
-            this.materiaisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiaisToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.materiaisToolStripMenuItem.Text = "Materiais";
             this.materiaisToolStripMenuItem.Click += new System.EventHandler(this.materiaisToolStripMenuItem_Click);
             // 
             // listaDePedidosToolStripMenuItem
             // 
+            this.listaDePedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pedidosToolStripMenuItem1,
+            this.materiaisToolStripMenuItem1});
             this.listaDePedidosToolStripMenuItem.Name = "listaDePedidosToolStripMenuItem";
-            this.listaDePedidosToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
-            this.listaDePedidosToolStripMenuItem.Text = "Lista de Pedidos";
-            this.listaDePedidosToolStripMenuItem.Click += new System.EventHandler(this.listaDePedidosToolStripMenuItem_Click);
+            this.listaDePedidosToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.listaDePedidosToolStripMenuItem.Text = "Modificar";
+            // 
+            // pedidosToolStripMenuItem1
+            // 
+            this.pedidosToolStripMenuItem1.Name = "pedidosToolStripMenuItem1";
+            this.pedidosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.pedidosToolStripMenuItem1.Text = "Pedidos";
+            this.pedidosToolStripMenuItem1.Click += new System.EventHandler(this.pedidosToolStripMenuItem1_Click);
+            // 
+            // materiaisToolStripMenuItem1
+            // 
+            this.materiaisToolStripMenuItem1.Name = "materiaisToolStripMenuItem1";
+            this.materiaisToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.materiaisToolStripMenuItem1.Text = "Materiais";
+            this.materiaisToolStripMenuItem1.Click += new System.EventHandler(this.materiaisToolStripMenuItem1_Click);
             // 
             // relatoriosToolStripMenuItem
             // 
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatoriosToolStripMenuItem.Text = "Relatorios";
-            this.relatoriosToolStripMenuItem.Click += new System.EventHandler(this.relatoriosToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -99,6 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(879, 568);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,6 +127,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -125,5 +144,7 @@
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materiaisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem materiaisToolStripMenuItem1;
     }
 }

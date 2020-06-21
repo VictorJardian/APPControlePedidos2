@@ -35,7 +35,7 @@ namespace APPControlePedidos2
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Dados cadastrados com sucesso!");
+                MessageBox.Show("Dados cadastrados com sucesso!", "Aviso");
 
                 txtUsuario.Clear();
                 txtSenha.Clear();

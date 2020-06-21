@@ -99,11 +99,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Formularios\FrmRelatorios.cs">
+    <Compile Include="Formularios\FrmMateriais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmRelatorios.Designer.cs">
-      <DependentUpon>FrmRelatorios.cs</DependentUpon>
+    <Compile Include="Formularios\FrmMateriais.Designer.cs">
+      <DependentUpon>FrmMateriais.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Formularios\FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
@@ -133,8 +133,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Formularios\FrmRelatorios.resx">
-      <DependentUpon>FrmRelatorios.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmMateriais.resx">
+      <DependentUpon>FrmMateriais.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

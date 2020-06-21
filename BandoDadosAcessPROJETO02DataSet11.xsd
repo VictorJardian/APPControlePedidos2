@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BandoDadosAcessPROJETO02DataSet1" targetNamespace="http://tempuri.org/BandoDadosAcessPROJETO02DataSet11.xsd" xmlns:mstns="http://tempuri.org/BandoDadosAcessPROJETO02DataSet11.xsd" xmlns="http://tempuri.org/BandoDadosAcessPROJETO02DataSet11.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BandoDadosAcessPROJETO02ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BandoDadosAcessPROJETO02ConnectionString (Settings)" PropertyReference="ApplicationSettings.APPControlePedidos2.Properties.Settings.GlobalReference.Default.BandoDadosAcessPROJETO02ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ListaPedidosTableAdapter" GeneratorDataComponentClassName="ListaPedidosTableAdapter" Name="ListaPedidos" UserDataComponentName="ListaPedidosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BandoDadosAcessPROJETO02ConnectionString (Settings)" DbObjectName="ListaPedidos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TampaEDP, TampaLight, TampaEnergisa, SobretampaEDP, SobretampaLight, SobretampaEnergisa, CaixaMedidorEDP, CaixaMedidorLight, CaixaMedidorEnergisa, PlacaSupDisjuntorEdpLight, PlacaSupDisjuntorEnergisa FROM ListaPedidos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TampaEDP" DataSetColumn="TampaEDP" />
+              <Mapping SourceColumn="TampaLight" DataSetColumn="TampaLight" />
+              <Mapping SourceColumn="TampaEnergisa" DataSetColumn="TampaEnergisa" />
+              <Mapping SourceColumn="SobretampaEDP" DataSetColumn="SobretampaEDP" />
+              <Mapping SourceColumn="SobretampaLight" DataSetColumn="SobretampaLight" />
+              <Mapping SourceColumn="SobretampaEnergisa" DataSetColumn="SobretampaEnergisa" />
+              <Mapping SourceColumn="CaixaMedidorEDP" DataSetColumn="CaixaMedidorEDP" />
+              <Mapping SourceColumn="CaixaMedidorLight" DataSetColumn="CaixaMedidorLight" />
+              <Mapping SourceColumn="CaixaMedidorEnergisa" DataSetColumn="CaixaMedidorEnergisa" />
+              <Mapping SourceColumn="PlacaSupDisjuntorEdpLight" DataSetColumn="PlacaSupDisjuntorEdpLight" />
+              <Mapping SourceColumn="PlacaSupDisjuntorEnergisa" DataSetColumn="PlacaSupDisjuntorEnergisa" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BandoDadosAcessPROJETO02DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BandoDadosAcessPROJETO02DataSet1" msprop:Generator_UserDSName="BandoDadosAcessPROJETO02DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListaPedidos" msprop:Generator_TableClassName="ListaPedidosDataTable" msprop:Generator_TableVarName="tableListaPedidos" msprop:Generator_TablePropName="ListaPedidos" msprop:Generator_RowDeletingName="ListaPedidosRowDeleting" msprop:Generator_RowChangingName="ListaPedidosRowChanging" msprop:Generator_RowEvHandlerName="ListaPedidosRowChangeEventHandler" msprop:Generator_RowDeletedName="ListaPedidosRowDeleted" msprop:Generator_UserTableName="ListaPedidos" msprop:Generator_RowChangedName="ListaPedidosRowChanged" msprop:Generator_RowEvArgName="ListaPedidosRowChangeEvent" msprop:Generator_RowClassName="ListaPedidosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TampaEDP" msprop:Generator_ColumnVarNameInTable="columnTampaEDP" msprop:Generator_ColumnPropNameInRow="TampaEDP" msprop:Generator_ColumnPropNameInTable="TampaEDPColumn" msprop:Generator_UserColumnName="TampaEDP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TampaLight" msprop:Generator_ColumnVarNameInTable="columnTampaLight" msprop:Generator_ColumnPropNameInRow="TampaLight" msprop:Generator_ColumnPropNameInTable="TampaLightColumn" msprop:Generator_UserColumnName="TampaLight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TampaEnergisa" msprop:Generator_ColumnVarNameInTable="columnTampaEnergisa" msprop:Generator_ColumnPropNameInRow="TampaEnergisa" msprop:Generator_ColumnPropNameInTable="TampaEnergisaColumn" msprop:Generator_UserColumnName="TampaEnergisa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SobretampaEDP" msprop:Generator_ColumnVarNameInTable="columnSobretampaEDP" msprop:Generator_ColumnPropNameInRow="SobretampaEDP" msprop:Generator_ColumnPropNameInTable="SobretampaEDPColumn" msprop:Generator_UserColumnName="SobretampaEDP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SobretampaLight" msprop:Generator_ColumnVarNameInTable="columnSobretampaLight" msprop:Generator_ColumnPropNameInRow="SobretampaLight" msprop:Generator_ColumnPropNameInTable="SobretampaLightColumn" msprop:Generator_UserColumnName="SobretampaLight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SobretampaEnergisa" msprop:Generator_ColumnVarNameInTable="columnSobretampaEnergisa" msprop:Generator_ColumnPropNameInRow="SobretampaEnergisa" msprop:Generator_ColumnPropNameInTable="SobretampaEnergisaColumn" msprop:Generator_UserColumnName="SobretampaEnergisa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaixaMedidorEDP" msprop:Generator_ColumnVarNameInTable="columnCaixaMedidorEDP" msprop:Generator_ColumnPropNameInRow="CaixaMedidorEDP" msprop:Generator_ColumnPropNameInTable="CaixaMedidorEDPColumn" msprop:Generator_UserColumnName="CaixaMedidorEDP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaixaMedidorLight" msprop:Generator_ColumnVarNameInTable="columnCaixaMedidorLight" msprop:Generator_ColumnPropNameInRow="CaixaMedidorLight" msprop:Generator_ColumnPropNameInTable="CaixaMedidorLightColumn" msprop:Generator_UserColumnName="CaixaMedidorLight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaixaMedidorEnergisa" msprop:Generator_ColumnVarNameInTable="columnCaixaMedidorEnergisa" msprop:Generator_ColumnPropNameInRow="CaixaMedidorEnergisa" msprop:Generator_ColumnPropNameInTable="CaixaMedidorEnergisaColumn" msprop:Generator_UserColumnName="CaixaMedidorEnergisa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlacaSupDisjuntorEdpLight" msprop:Generator_ColumnVarNameInTable="columnPlacaSupDisjuntorEdpLight" msprop:Generator_ColumnPropNameInRow="PlacaSupDisjuntorEdpLight" msprop:Generator_ColumnPropNameInTable="PlacaSupDisjuntorEdpLightColumn" msprop:Generator_UserColumnName="PlacaSupDisjuntorEdpLight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlacaSupDisjuntorEnergisa" msprop:Generator_ColumnVarNameInTable="columnPlacaSupDisjuntorEnergisa" msprop:Generator_ColumnPropNameInRow="PlacaSupDisjuntorEnergisa" msprop:Generator_ColumnPropNameInTable="PlacaSupDisjuntorEnergisaColumn" msprop:Generator_UserColumnName="PlacaSupDisjuntorEnergisa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

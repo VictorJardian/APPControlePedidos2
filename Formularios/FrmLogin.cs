@@ -39,7 +39,7 @@ namespace APPControlePedidos2
             try
             {
                 string SQL = "select * FROM Logins where Usuario=@Usuario and Senha=@Senha";
-                String conexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\win10\Desktop\BandoDadosAcessPROJETO02.mdb";
+                String conexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\win10\source\repos\APPControlePedidos2\Resources\BandoDadosAcessPROJETO02.mdb";
                 OleDbConnection con = new OleDbConnection(conexao);
                 con.Open();
 
@@ -55,7 +55,7 @@ namespace APPControlePedidos2
                     autenticacao(dr["Usuario"].ToString(), dr["Senha"].ToString());
                     con.Close();
                     
-                    MessageBox.Show("Logado com sucesso!");
+                    MessageBox.Show("Logado com sucesso!","Bem Vindo");
                     this.Close();
 
                     nt = new Thread (novoform);
@@ -65,7 +65,7 @@ namespace APPControlePedidos2
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao logar!");
+                    MessageBox.Show("Erro ao logar!","Aviso");
                 }
 
             }

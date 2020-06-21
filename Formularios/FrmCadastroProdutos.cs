@@ -35,7 +35,7 @@ namespace APPControlePedidos2.Formularios
 
             cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Produto cadastrado com sucesso!");
+            MessageBox.Show("Produto cadastrado com sucesso!", "Aviso");
 
             txtNomeProd.Clear();
 
@@ -60,7 +60,7 @@ namespace APPControlePedidos2.Formularios
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Produtos alterados com sucesso!");
+                MessageBox.Show("Produtos alterados com sucesso!", "Aviso");
 
                 txtNomeProd.Clear();
 
