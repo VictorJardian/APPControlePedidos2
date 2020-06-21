@@ -37,6 +37,8 @@
             this.materiaisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,19 +90,22 @@
             // pedidosToolStripMenuItem1
             // 
             this.pedidosToolStripMenuItem1.Name = "pedidosToolStripMenuItem1";
-            this.pedidosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.pedidosToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.pedidosToolStripMenuItem1.Text = "Pedidos";
             this.pedidosToolStripMenuItem1.Click += new System.EventHandler(this.pedidosToolStripMenuItem1_Click);
             // 
             // materiaisToolStripMenuItem1
             // 
             this.materiaisToolStripMenuItem1.Name = "materiaisToolStripMenuItem1";
-            this.materiaisToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.materiaisToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.materiaisToolStripMenuItem1.Text = "Materiais";
             this.materiaisToolStripMenuItem1.Click += new System.EventHandler(this.materiaisToolStripMenuItem1_Click);
             // 
             // relatoriosToolStripMenuItem
             // 
+            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem,
+            this.materaisToolStripMenuItem});
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatoriosToolStripMenuItem.Text = "Relatorios";
@@ -111,6 +116,20 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // materaisToolStripMenuItem
+            // 
+            this.materaisToolStripMenuItem.Name = "materaisToolStripMenuItem";
+            this.materaisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materaisToolStripMenuItem.Text = "Materais";
+            this.materaisToolStripMenuItem.Click += new System.EventHandler(this.materaisToolStripMenuItem_Click);
             // 
             // FrmTelaPrincipal
             // 
@@ -146,5 +165,7 @@
         private System.Windows.Forms.ToolStripMenuItem materiaisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem materiaisToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem materaisToolStripMenuItem;
     }
 }

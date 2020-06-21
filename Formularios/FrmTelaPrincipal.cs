@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using APPControlePedidos2.Formularios;
+using APPControlePedidos2.Relatorios;
 
 namespace APPControlePedidos2
 {
@@ -45,6 +46,18 @@ namespace APPControlePedidos2
         private void materiaisToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FrmMaterais frm = new FrmMaterais();
+            frm.Show();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRelUsuarios frm = new FrmRelUsuarios();
+            frm.Show();
+        }
+
+        private void materaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRelMateriais frm = new FrmRelMateriais();
             frm.Show();
         }
     }

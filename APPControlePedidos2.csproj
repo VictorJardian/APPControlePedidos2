@@ -48,8 +48,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +77,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BandoDadosAcessPROJETO02DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BandoDadosAcessPROJETO02DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BandoDadosAcessPROJETO02DataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet21.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +122,12 @@
     <Compile Include="Formularios\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmRelMateriaiscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRelMateriaiscs.Designer.cs">
+      <DependentUpon>FrmRelMateriaiscs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmTelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +141,12 @@
     </Compile>
     <Compile Include="Formularios\FrmMateriais.Designer.cs">
       <DependentUpon>FrmMateriais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRelUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRelUsuarios.Designer.cs">
+      <DependentUpon>FrmRelUsuarios.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Formularios\FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
@@ -120,9 +163,14 @@
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRelMateriaiscs.resx">
+      <DependentUpon>FrmRelMateriaiscs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTelaPrincipal.resx">
       <DependentUpon>FrmTelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Report3.rdlc" />
+    <EmbeddedResource Include="Formularios\Report4.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +184,43 @@
     <EmbeddedResource Include="Formularios\FrmMateriais.resx">
       <DependentUpon>FrmMateriais.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRelUsuarios.resx">
+      <DependentUpon>FrmRelUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BandoDadosAcessPROJETO02DataSet12.xsc">
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BandoDadosAcessPROJETO02DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet12.xss">
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet2.xsc">
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BandoDadosAcessPROJETO02DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet2.xss">
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet21.xsc">
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BandoDadosAcessPROJETO02DataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BandoDadosAcessPROJETO02DataSet21.xss">
+      <DependentUpon>BandoDadosAcessPROJETO02DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
